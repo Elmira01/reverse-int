@@ -1,3 +1,4 @@
 module.exports = function reverse (n) {
-return +[...(""+Math.abs(n))].reverse().join("")*(n<0 ? -1:1);
+    let x = Math.abs(n).toString().split("").reverse().join("")
+  return n<0? -x : +x 
 }
