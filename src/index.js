@@ -1,4 +1,6 @@
 module.exports = function reverse (n) {
-    let x = Math.abs(n).toString().split("").reverse().join("")
-  return n<0? -x : +x 
+   const split = [...n.toString()].reverse();
+  
+  return n < 0 ? +isNeg(split).join``
+        : +split.join``;
 }
